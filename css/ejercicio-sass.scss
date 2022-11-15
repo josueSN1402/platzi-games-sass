@@ -46,3 +46,13 @@ main {
 		text-align: center;
 	}
 }
+
+.estadistica--perfil {
+	display: flex;
+	width: 50%;
+	height: 90px;
+	padding-top: 20px;
+	margin: 0 auto;
+	justify-content: space-around;
+	border-radius: 20px
+}

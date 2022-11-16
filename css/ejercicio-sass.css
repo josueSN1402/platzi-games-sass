@@ -20,18 +20,21 @@ main {
 .perfil {
   width: 50%;
   padding-top: 50px;
+  color: #ffffff;
+  background-color: #8810da;
 }
 .perfil__avatar {
   display: block;
   margin: 0 auto;
   border-radius: 50em;
 }
-.perfil__nombre {
+.perfil__nombre, .perfil__minibio h2 {
   text-transform: uppercase;
   text-align: center;
   font-size: 25px;
+  font-family: "Oswald", sans-serif;
 }
-.perfil__titulo {
+.perfil__titulo, .perfil__minibio h3 {
   display: block;
   text-transform: uppercase;
   text-align: center;
@@ -48,17 +51,66 @@ main {
   text-decoration: none;
   text-transform: uppercase;
   text-align: center;
+  font-family: "Oswald", sans-serif;
+  color: #ffffff;
 }
 
+.perfil__minibio {
+  margin: 0 auto;
+  padding-top: 20px;
+}
 .estadistica--perfil {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   width: 50%;
-  height: 90px;
   padding-top: 20px;
   margin: 0 auto;
   -ms-flex-pack: distribute;
       justify-content: space-around;
   border-radius: 20px;
+  background-color: #ffffff;
+  color: #333333;
+}
+.estadistica--perfil h3 {
+  font-weight: 300;
+  font-size: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Oswald", sans-serif;
+}
+.estadistica--perfil span {
+  font-size: 12px;
+  text-transform: uppercase;
+  text-align: center;
+  font-family: "Oswald", sans-serif;
+}
+
+.ubicacion--perfil {
+  width: 50%;
+  height: 90px;
+  margin: 30px auto 0;
+  padding: 20px 0 0 50px;
+  border-radius: 20px;
+  background-color: #ffffff;
+  color: #333333;
+}
+.ubicacion--perfil i {
+  display: block;
+  float: left;
+  padding-right: 10px;
+  font-size: 40px;
+  color: #3f579a;
+}
+.ubicacion--perfil h2,
+.ubicacion--perfil h3 {
+  text-transform: uppercase;
+  font-family: "Oswald", sans-serif;
+}
+.ubicacion--perfil h2 {
+  font-weight: 600;
+  font-size: 20px;
+}
+.ubicacion--perfil h3 {
+  font-size: 12px;
 }

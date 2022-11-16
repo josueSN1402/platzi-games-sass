@@ -6,6 +6,7 @@ block body
 			h2.perfil__nombre John Wick
 			h3.perfil__titulo Asesino Legendario
 			a(href="#" class="perfil__boton") Seguir
+			//- Antes de nombrar la clase se debe pensar en si este bloque se puede reutilizar en otro lugar de la página. En este caso "Estadistica" no "perfil", porque este último hace referencia a que nunca se usara fuera de "Perfil"
 			.estadistica--perfil
 				+stats("12k", "Seguidores")
 				+stats("1.7k", "Siguiendo")

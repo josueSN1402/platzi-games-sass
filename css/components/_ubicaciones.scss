@@ -13,8 +13,7 @@
 	}
 	h2,
 	h3 {
-		text-transform: uppercase;
-		font-family: $font2;
+		@include titulos($font2);
 	}
 	h2 {
 		font-weight: 600;

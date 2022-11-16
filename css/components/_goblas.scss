@@ -8,6 +8,8 @@ $color-variacion: #3f579a;
 @mixin caja {
 	background-color: $color-claro;
 	color: $color-primario;
+	width: 50%;
+	min-width: 350px;
 	box-shadow: 0 20px 30px 0 rgba(0, 0, 0, 0.5);
 	border-radius: 20px;
 }
@@ -29,6 +31,7 @@ $color-variacion: #3f579a;
 	} @else {
 		font-family: $font2;
 		text-transform: uppercase;
+		line-height: 1.6;
 	}
 }
 
@@ -45,5 +48,5 @@ body {
 main {
 	display: flex;
 	width: 100%;
-	height: 100vh;
+	min-height: 100vh;
 }

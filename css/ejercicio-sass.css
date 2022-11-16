@@ -179,3 +179,29 @@ main {
 .galeria img {
   border-radius: 10px;
 }
+
+.articulos {
+  width: 40%;
+  padding: 50px 0 0 50px;
+}
+
+.articulo {
+  margin-bottom: 75px;
+  border-bottom: 3px solid #8810da;
+}
+.articulo__categoria {
+  font-weight: 500;
+  font-size: 16px;
+  color: #8810da;
+  font-family: "Lato", sans-serif;
+}
+.articulo__titulo {
+  font-size: 20px;
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+  line-height: 1.6;
+}
+.articulo__descripcion {
+  margin-bottom: 30px;
+  padding-right: 100px;
+}

@@ -2,51 +2,58 @@ $font1: 'Lato', sans-serif;
 $font2: 'Oswald', sans-serif;
 $color-primario: #333333;
 $color-claro: #ffffff;
+$color-claro2: #f1f1f1;
 $color-secundario: #8810da;
+$color-secundario-dark: #7d50b1;
+$color-secundario2: #818aa5;
 $color-variacion: #3f579a;
 
 @mixin caja {
-	background-color: $color-claro;
-	color: $color-primario;
-	width: 50%;
-	min-width: 350px;
-	box-shadow: 0 20px 30px 0 rgba(0, 0, 0, 0.5);
-	border-radius: 20px;
+  background-color: $color-claro;
+  color: $color-primario;
+  width: 50%;
+  min-width: 350px;
+  box-shadow: 0 20px 30px 0 rgba(0, 0, 0, 0.5);
+  border-radius: 20px;
+  @media (prefers-color-scheme: dark) {
+  	box-shadow: 0 20px 30px 0 rgba(0, 0, 0, 0.3);
+  }
 }
 
 @function get-opacity($color, $nivel) {
-	@return rgba($color, $nivel);
+  @return rgba($color, $nivel);
 }
 
 @each $header, $size in (h1: 30px, h2: 25px, h3: 20px) {
-	#{$header} {
-		font-size: $size;
-		margin: 0;
-	}
+  #{$header} {
+    font-size: $size;
+    margin: 0;
+  }
 }
 
 @mixin titulos($fuente) {
-	@if $fuente == $font1 {
-		font-family: $font1;
-	} @else {
-		font-family: $font2;
-		text-transform: uppercase;
-		line-height: 1.6;
-	}
+  @if $fuente == $font1 {
+    font-family: $font1;
+  } @else {
+    font-family: $font2;
+    text-transform: uppercase;
+    line-height: 1.6;
+  }
 }
 
 * {
-	box-sizing: border-box;
-	-moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
 }
 
 body {
-	margin: 0;
-	font-family: $font1;
+  margin: 0;
+  font-family: $font1;
 }
 
 main {
-	display: flex;
-	width: 100%;
-	min-height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 100%;
+  min-height: 100vh;
 }

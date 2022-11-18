@@ -1,23 +1,33 @@
 .articulos {
-	width: 40%;
-	padding: 50px 0 0 50px;
+  padding: 50px 0 0 10%;
+  background-color: $color-claro;
+  @media (prefers-color-scheme: dark) {
+    background-color: $color-primario;
+  }
 }
 
 .articulo {
-	margin-bottom: 75px;
-	border-bottom: 3px solid $color-secundario;
-	&__categoria {
-		font-weight: 500;
-		font-size: 16px;
-		color: $color-secundario;
-		@include titulos($font1);
-	}
-	&__titulo {
-		font-size: 20px;
-		@include titulos($font2);
-	}
-	&__descripcion {
-		margin-bottom: 30px;
-		padding-right: 100px;
-	}
+  margin-bottom: 75px;
+  border-bottom: 3px solid $color-secundario;
+  &__categoria {
+    font-weight: 500;
+    font-size: 16px;
+    color: $color-secundario;
+    @include titulos($font2);
+  }
+  &__titulo {
+    font-size: 20px;
+    @include titulos($font2);
+  }
+  &__descripcion {
+    margin-bottom: 30px;
+    padding-right: 100px;
+  }
+  @media (prefers-color-scheme: dark) {
+    color: $color-claro;
+    border-bottom: 3px solid $color-secundario-dark;
+    &__categoria {
+      color: $color-secundario-dark;
+    }
+  }
 }

@@ -4,10 +4,14 @@
   @media (prefers-color-scheme: dark) {
     background-color: $color-primario;
   }
+  @media screen and (max-width: 820px) {
+    padding: 10% 10% 0 10%;
+  }
 }
 
 .articulo {
   margin-bottom: 75px;
+  margin-right: 10px;
   border-bottom: 3px solid $color-secundario;
   &__categoria {
     font-weight: 500;
@@ -28,6 +32,12 @@
     border-bottom: 3px solid $color-secundario-dark;
     &__categoria {
       color: $color-secundario-dark;
+    }
+  }
+  @media screen and (max-width: 820px) {
+    margin-bottom: 45px;
+    &__descripcion {
+      margin-bottom: 20px;
     }
   }
 }
